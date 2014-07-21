@@ -1163,6 +1163,7 @@ class ezcFeed
         self::registerFeed( 'rss1', 'ezcFeedRss1' );
         self::registerFeed( 'rss2', 'ezcFeedRss2' );
         self::registerFeed( 'atom', 'ezcFeedAtom' );
+        self::registerFeed( 'media-rss', 'ezcFeedMediaRss' );
 
         self::registerModule( 'Content', 'ezcFeedContentModule', 'content' );
         self::registerModule( 'CreativeCommons', 'ezcFeedCreativeCommonsModule', 'creativeCommons' );

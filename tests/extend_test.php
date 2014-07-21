@@ -44,7 +44,8 @@ class ezcFeedExtendTest extends ezcFeedTestCase
         $expected = array(
             'rss1' => 'ezcFeedRss1',
             'rss2' => 'ezcFeedRss2',
-            'atom' => 'ezcFeedAtom'
+            'atom' => 'ezcFeedAtom',
+            'media-rss' => 'ezcFeedMediaRss'
             );
         $this->assertEquals( $expected, $types );
     }
@@ -205,7 +206,8 @@ EOL;
             'rss1' => 'ezcFeedRss1',
             'rss2' => 'ezcFeedRss2',
             'atom' => 'ezcFeedAtom',
-            'opml' => 'myOpmlHandler'
+            'opml' => 'myOpmlHandler',
+            'media-rss' => 'ezcFeedMediaRss'
             );
         $this->assertEquals( $expected, $types );
         ezcFeed::unregisterFeed( 'opml' );
