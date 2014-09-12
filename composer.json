@@ -43,7 +43,7 @@
     "type": "library",
     "minimum-stability": "dev",
         "require": {
-            "zetacomponents/base": "*"
+            "zetacomponents/base": "~1.8"
         },
         "require-dev": {
             "zetacomponents/unit-test": "*"
