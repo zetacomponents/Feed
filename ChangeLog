@@ -1,3 +1,11 @@
+1.4.0 - Friday 12 September 2014
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Fixed: Updated copyright dates in NOTICE files.
+- Fixed #ZETACOMP-33: Many dead links (404)
+- Remove custom test runner.
+- Added composer.json
+
 1.4alpha1 - [RELEASEDATE]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -7,7 +15,8 @@
 1.3 - Monday 21 December 2009
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- No changes.
+- Fixed: Adjusted source headers of Feed to Apache license.
+- Updated: Moving copyright information to NOTICE files.
 
 
 1.3rc1 - Monday 07 December 2009
