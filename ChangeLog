@@ -1,7 +1,13 @@
-1.4alpha1 - [RELEASEDATE]
+1.4 - Saturday 27 September 2014
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Added the GeoRSS module.
+- Adjusted source headers of Base to Apache license.
+- Updated: Moving copyright information to NOTICE files.
+- Remove custom test runner.
+- Added composer.json and test dependencies.
+- Added Travis configuration.
+- Fixed #ZETACOMP-33: Many dead links (404).
 
 
 1.3 - Monday 21 December 2009
