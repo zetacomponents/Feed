@@ -90,7 +90,7 @@ class ezcFeedTest extends ezcFeedTestCase
 
     public function testFeedExistsRemote()
     {
-        $feed = ezcFeed::parse( 'http://ez.no/rss/feed/communitynews' );
+        $feed = ezcFeed::parse( 'http://ez.no/rss/feed/news' );
     }
 
     public function testParseBroken()
