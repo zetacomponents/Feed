@@ -25,8 +25,6 @@
  * @subpackage Tests
  */
 
-include_once( 'Feed/tests/test.php' );
-
 /**
  * @package Feed
  * @subpackage Tests
