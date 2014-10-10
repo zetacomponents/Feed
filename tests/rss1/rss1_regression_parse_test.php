@@ -25,9 +25,6 @@
  * @subpackage Tests
  */
 
-include_once( 'UnitTest/src/regression_suite.php' );
-include_once( 'UnitTest/src/regression_test.php' );
-
 /**
  * @package Feed
  * @subpackage Tests

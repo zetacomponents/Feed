@@ -6,6 +6,6 @@
     <description>Feed description</description>
     <pubDate>XXX</pubDate>
     <generator>eZ Components</generator>
-    <docs></docs>
+    <docs/>
   </channel>
 </rss>

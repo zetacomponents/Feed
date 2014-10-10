@@ -29,7 +29,7 @@
  * @package Feed
  * @subpackage Tests
  */
-class ezcFeedRegressionTest extends ezcTestRegressionTest
+abstract class ezcFeedRegressionTest extends ezcTestRegressionTest
 {
     protected function createFeed( $type, $data )
     {

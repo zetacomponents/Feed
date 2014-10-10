@@ -11,7 +11,7 @@
       <title>Item title</title>
       <link>Item link</link>
       <description>Item description</description>
-      <category></category>
+      <category/>
     </item>
   </channel>
 </rss>

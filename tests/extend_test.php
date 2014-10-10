@@ -25,8 +25,6 @@
  * @subpackage Tests
  */
 
-include_once( 'Feed/tests/test.php' );
-
 /**
  * @package Feed
  * @subpackage Tests
@@ -57,7 +55,8 @@ class ezcFeedExtendTest extends ezcFeedTestCase
             'CreativeCommons' => 'ezcFeedCreativeCommonsModule',
             'DublinCore'      => 'ezcFeedDublinCoreModule',
             'Geo'             => 'ezcFeedGeoModule',
-            'iTunes'          => 'ezcFeedITunesModule'
+            'iTunes'          => 'ezcFeedITunesModule',
+            'GeoRss'          => 'ezcFeedGeoRssModule'
             );
         $this->assertEquals( $expected, $types );
     }
@@ -70,7 +69,8 @@ class ezcFeedExtendTest extends ezcFeedTestCase
             'creativeCommons' => 'CreativeCommons',
             'dc'              => 'DublinCore',
             'geo'             => 'Geo',
-            'itunes'          => 'iTunes'
+            'itunes'          => 'iTunes',
+            'georss'          => 'GeoRss'
             );
         $this->assertEquals( $expected, $types );
     }
@@ -222,7 +222,8 @@ EOL;
             'DublinCore'      => 'ezcFeedDublinCoreModule',
             'Geo'             => 'ezcFeedGeoModule',
             'iTunes'          => 'ezcFeedITunesModule',
-            'Slash'           => 'mySlashHandler'
+            'Slash'           => 'mySlashHandler',
+            'GeoRss'          => 'ezcFeedGeoRssModule'
             );
         $this->assertEquals( $expected, $types );
 
@@ -233,7 +234,8 @@ EOL;
             'dc'              => 'DublinCore',
             'geo'             => 'Geo',
             'itunes'          => 'iTunes',
-            'slash'           => 'Slash'
+            'slash'           => 'Slash',
+            'georss'          => 'GeoRss'
             );
         $this->assertEquals( $expected, $types );
         ezcFeed::unregisterModule( 'Slash' );

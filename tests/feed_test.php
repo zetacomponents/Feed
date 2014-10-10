@@ -25,8 +25,6 @@
  * @subpackage Tests
  */
 
-include_once( 'Feed/tests/test.php' );
-
 /**
  * @package Feed
  * @subpackage Tests
@@ -92,7 +90,7 @@ class ezcFeedTest extends ezcFeedTestCase
 
     public function testFeedExistsRemote()
     {
-        $feed = ezcFeed::parse( 'http://ez.no/rss/feed/communitynews' );
+        $feed = ezcFeed::parse( 'http://ez.no/rss/feed/news' );
     }
 
     public function testParseBroken()
