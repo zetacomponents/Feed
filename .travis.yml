@@ -11,6 +11,10 @@ matrix:
   allow_failures:
     - php: hhvm
 
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y libxml2
+
 before_script:
-- wget http://getcomposer.org/composer.phar
-- php composer.phar --dev install
+  - wget http://getcomposer.org/composer.phar
+  - php composer.phar --dev install --prefer-source
