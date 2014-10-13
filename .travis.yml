@@ -17,4 +17,4 @@ before_install:
 
 before_script:
   - wget http://getcomposer.org/composer.phar
-  - php composer.phar --dev install
+  - php composer.phar --dev install --prefer-source
