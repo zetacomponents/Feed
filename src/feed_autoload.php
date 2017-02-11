@@ -58,6 +58,7 @@ return array(
     'ezcFeedIdElement'                           => 'Feed/structs/id.php',
     'ezcFeedImageElement'                        => 'Feed/structs/image.php',
     'ezcFeedLinkElement'                         => 'Feed/structs/link.php',
+    'ezcFeedMediaRss'                            => 'Feed/processors/media-rss.php',
     'ezcFeedPersonElement'                       => 'Feed/structs/person.php',
     'ezcFeedRss1'                                => 'Feed/processors/rss1.php',
     'ezcFeedRss2'                                => 'Feed/processors/rss2.php',
