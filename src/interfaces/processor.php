@@ -144,7 +144,15 @@ abstract class ezcFeedProcessor
         }
         foreach ( $value as $valueElement )
         {
-            $meta = $this->xml->createElement( $element, ( $valueElement instanceof ezcFeedElement ) ? $valueElement->__toString() : (string)$valueElement );
+            $meta = $this->xml->createElement( $element );
+
+            $text = ( $valueElement instanceof ezcFeedElement ) ? $valueElement->__toString() : (string)$valueElement;
+            if ( $text !== '' )
+            {
+                $text = $this->xml->createTextNode( ( $valueElement instanceof ezcFeedElement ) ? $valueElement->__toString() : (string)$valueElement );
+                $meta->appendChild( $text );
+            }
+
             $root->appendChild( $meta );
         }
     }
