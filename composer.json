@@ -47,7 +47,8 @@
     "name": "zetacomponents/feed",
     "type": "library",
         "require": {
-            "zetacomponents/base": "~1.8"
+            "zetacomponents/base": "~1.8",
+            "phpunit/phpunit": "~9.0"
         },
         "require-dev": {
             "zetacomponents/unit-test": "*"
