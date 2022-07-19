@@ -886,7 +886,7 @@ class ezcFeed
             // 301 = moved permanently
             // 302 = found
             // 307 = temporary redirect
-            if ( preg_match( "@200|301|302|307@", $headers[0] ) === 0 )
+            if ( $headers === false || preg_match( "@200|301|302|307@", $headers[0] ) === 0 )
             {
                 throw new ezcBaseFileNotFoundException( $uri );
             }

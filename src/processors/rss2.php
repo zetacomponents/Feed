@@ -408,7 +408,7 @@ class ezcFeedRss2 extends ezcFeedProcessor implements ezcFeedParser
     {
         $data = $category->term;
 
-        $element = $this->xml->createElement( 'category', $data );
+        $element = $this->xml->createElement( 'category', $data ?? '' );
         $root->appendChild( $element );
 
         $data = $category->scheme;
@@ -436,7 +436,7 @@ class ezcFeedRss2 extends ezcFeedProcessor implements ezcFeedParser
             $data = "{$email} ({$name})";
         }
 
-        $element = $this->xml->createElement( $elementName, $data );
+        $element = $this->xml->createElement( $elementName, $data ?? '' );
         $root->appendChild( $element );
     }
 
@@ -463,7 +463,7 @@ class ezcFeedRss2 extends ezcFeedProcessor implements ezcFeedParser
             $data = $data . " ({$url})";
         }
 
-        $element = $this->xml->createElement( 'generator', $data );
+        $element = $this->xml->createElement( 'generator', $data ?? '' );
         $root->appendChild( $element );
     }
 

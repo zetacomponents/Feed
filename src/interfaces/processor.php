@@ -322,7 +322,7 @@ abstract class ezcFeedProcessor
     protected function addAttribute( DOMNode $node, $attribute, $value )
     {
         $attr = $this->xml->createAttribute( $attribute );
-        $val = $this->xml->createTextNode( $value );
+        $val = $this->xml->createTextNode( $value ?? '' );
         $attr->appendChild( $val );
         $node->appendChild( $attr );
     }

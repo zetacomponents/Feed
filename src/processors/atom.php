@@ -445,7 +445,7 @@ class ezcFeedAtom extends ezcFeedProcessor implements ezcFeedParser
      */
     private function generateGenerator( DOMNode $root, ezcFeedGeneratorElement $generator )
     {
-        $name = $generator->name;
+        $name = $generator->name ?? '';
         $version = $generator->version;
         $url = $generator->url;
 

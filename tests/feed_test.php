@@ -53,12 +53,12 @@ class ezcFeedTest extends ezcFeedTestCase
     {
         try
         {
-            $feed = ezcFeed::parse( 'http://ez.no/not-here.xml' );
+            $feed = ezcFeed::parse( 'https://derickrethans.nl/not-here.xml' );
             $this->fail( 'Expected exception not thrown' );
         }
         catch ( ezcBaseFileNotFoundException $e )
         {
-            $this->assertEquals( "The file 'http://ez.no/not-here.xml' could not be found.", $e->getMessage() );
+            $this->assertEquals( "The file 'https://derickrethans.nl/not-here.xml' could not be found.", $e->getMessage() );
         }
     }
 
@@ -90,7 +90,7 @@ class ezcFeedTest extends ezcFeedTestCase
 
     public function testFeedExistsRemote()
     {
-        $feed = ezcFeed::parse( 'http://ez.no/rss/feed/news' );
+        $feed = ezcFeed::parse( 'https://derickrethans.nl/feed.xml' );
     }
 
     public function testParseBroken()
