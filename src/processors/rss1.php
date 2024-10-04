@@ -9,9 +9,9 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -517,7 +517,7 @@ class ezcFeedRss1 extends ezcFeedProcessor implements ezcFeedParser
      * @param ezcFeed $feed The feed object in which to store the parsed XML element as a feed image
      * @param DOMElement $xml The XML element object to parse
      */
-    private function parseImage( ezcFeed $feed, DOMElement $xml = null )
+    private function parseImage( ezcFeed $feed, ?DOMElement $xml = null )
     {
         $image = $feed->add( 'image' );
         if ( $xml !== null )
@@ -552,7 +552,7 @@ class ezcFeedRss1 extends ezcFeedProcessor implements ezcFeedParser
      * @param ezcFeed $feed The feed object in which to store the parsed XML element as a feed textinput
      * @param DOMElement $xml The XML element object to parse
      */
-    private function parseTextInput( ezcFeed $feed, DOMElement $xml = null )
+    private function parseTextInput( ezcFeed $feed, ?DOMElement $xml = null )
     {
         $textInput = $feed->add( 'textInput' );
         if ( $xml !== null )
