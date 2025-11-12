@@ -243,7 +243,7 @@ abstract class ezcFeedProcessor
         {
             list( $prefix, $key ) = explode( ':', $tagName );
             $moduleName = isset( $this->usedPrefixes[$prefix] ) ? $this->usedPrefixes[$prefix] : null;
-            if ( isset( $supportedModules[$moduleName] ) )
+            if ( $moduleName !== null && isset( $supportedModules[$moduleName] ) )
             {
                 $module = $item->hasModule( $moduleName ) ? $item->$moduleName : $item->addModule( $moduleName );
                 $module->parse( $key, $node );
